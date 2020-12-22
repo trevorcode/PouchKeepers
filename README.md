@@ -2,7 +2,7 @@
 
 Use 
 
-    npm i postcss-cli tailwindcss autoprefixer cssnano
+    npm i postcss postcss-cli tailwindcss autoprefixer cssnano
 
 Then make a package.json
 
