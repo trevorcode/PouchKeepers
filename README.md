@@ -1,9 +1,11 @@
 # How to actually install Tailwind into a static site
 
 Use 
+
     npm i postcss-cli tailwindcss autoprefixer cssnano
 
 Then make a package.json
+
     {
         "scripts": {
             "buildcss": "postcss dist/tailwind.css -o dist/tailwind.min.css"
