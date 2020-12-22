@@ -1,0 +1,335 @@
+/* Main CSS */
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji" !important;
+  scroll-behavior: smooth;
+}
+
+blockquote {
+  border-left: #52e0a5 4px solid;
+  padding: 1.25rem;
+  background-color: white;
+  margin: 8px 0;
+  font-style: italic;
+}
+blockquote::before {
+  content: '"';
+}
+blockquote::after {
+  content: '"';
+}
+
+label {
+  display: block;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  resize: vertical;
+}
+
+/* Utility Classes */
+.container {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+  padding: 0 15px;
+}
+
+.form-group {
+  padding: 8px 0;
+}
+
+/* nav */
+.nav-bar {
+  width: 100%;
+  height: 65px;
+  background-color: #0d4a73;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+.nav-logo:active {
+  color: white;
+}
+.nav-logo span {
+  width: 60px;
+}
+
+.nav-container {
+  margin: 0 auto 0 auto;
+  max-width: 960px;
+  height: 65px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.nav-img {
+  height: 65px;
+  object-fit: cover;
+}
+
+.nav-button-container {
+  display: flex;
+}
+
+.nav-button {
+  padding: 8px 10px;
+  display: block;
+  border-radius: 5px;
+  margin: 0 5px;
+  text-decoration: none;
+  color: #80f9c3;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.nav-button:hover {
+  background-color: #f0fff8;
+}
+
+/* Landing Hero */
+.landing-section {
+  /* The image used */
+  background-color: #4088bf;
+  background-image: linear-gradient(45deg, #4088bf, rgba(64, 136, 191, 0.3)), url("../images/cabinentimage.jpg");
+  background-size: cover;
+  height: 680px;
+  max-height: 90vh;
+  display: grid;
+  align-items: center;
+}
+@media (min-width: 720px) {
+  .landing-section {
+    font-size: 1.5rem;
+  }
+}
+
+.landing-main {
+  padding: 2rem;
+}
+
+.landing-header {
+  font-size: 2.5em;
+  color: white;
+  text-shadow: #384955 2px 2px 5px;
+}
+
+.landing-subheader {
+  font-size: 1.5em;
+  color: #384955;
+}
+
+.landing-more {
+  position: relative;
+  top: -2rem;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  align-self: end;
+}
+.landing-more > * {
+  display: block;
+}
+@media (min-width: 720px) {
+  .landing-more {
+    display: none;
+  }
+}
+
+/* The animation code */
+@keyframes pulse {
+  from {
+    margin: -4px;
+  }
+  to {
+    margin: -16px;
+  }
+}
+.arrow {
+  border: solid white;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 10px;
+  margin: -6px 0;
+  animation: pulse 1s ease infinite alternate;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.section-header {
+  font-size: 3rem;
+  border-bottom: 4px solid #4088bf;
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+.disorganized-section {
+  background-color: #ecf3f9;
+}
+
+.disorganizedContainer {
+  text-align: center;
+  font-size: 1.25rem;
+}
+.disorganizedContainer img {
+  width: 90%;
+  margin: 1rem;
+  box-shadow: gray 4px 4px 14px;
+}
+
+.disorganized-flex {
+  padding: 2rem 0;
+}
+@media (min-width: 720px) {
+  .disorganized-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .disorganized-flex p:nth-of-type(1) {
+    text-align: left;
+  }
+  .disorganized-flex p:nth-of-type(1)::after {
+    content: "You need Pouch Keepers!";
+  }
+  .disorganized-flex p:nth-of-type(2) {
+    display: none;
+  }
+}
+
+.about-listpoints {
+  margin: 2rem 0;
+  text-align: center;
+}
+@media (min-width: 720px) {
+  .about-listpoints {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.3rem;
+    text-align: left;
+  }
+}
+.about-listpoints img {
+  max-width: 100%;
+  object-fit: cover;
+  box-shadow: gray 4px 4px 14px;
+  margin-bottom: 2rem;
+}
+
+.about-listpoints-list {
+  margin-left: 25px;
+  text-align: left;
+}
+@media (min-width: 720px) {
+  .about-listpoints-list {
+    margin-left: 45px;
+  }
+}
+.about-listpoints-list li {
+  margin: 6px 0;
+}
+
+.testimonials {
+  background-color: #4088bf;
+  padding: 3rem 0;
+}
+.testimonials .section-header {
+  border-bottom-color: #80f9c3;
+  color: white;
+}
+
+@media (min-width: 720px) {
+  .testimonials-grid {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+  }
+  .testimonials-grid blockquote {
+    width: 45%;
+  }
+}
+
+.footer {
+  background-color: #0d4a73;
+  color: #b6dafb;
+}
+.footer h3 {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.footer section {
+  padding: 1rem 0;
+}
+@media (min-width: 720px) {
+  .footer > .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.interested-section {
+  background-color: #e8f1f7;
+  padding: 4rem 0;
+  text-align: center;
+}
+.interested-section .container {
+  font-size: 2rem;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  border: none;
+  background-color: white;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn:hover {
+  background-color: #4088bf;
+}
+
+.btn.btn-primary {
+  background-color: #4088bf;
+  color: white;
+  border: 1px solid #4088bf;
+}
+.btn.btn-primary:hover {
+  background-color: white;
+  color: #61b9ec;
+}
+
+.btn.btn-secondary {
+  background-color: #80f9c3;
+  color: #0b3d26;
+  border: 1px solid #80f9c3;
+  transition: 0.3s;
+}
+.btn.btn-secondary:hover {
+  background-color: #f0fff8;
+  color: #0b3d26;
+  border: 1px solid #0bf48b;
+  box-shadow: #80f9c3 0px 0px 12px;
+}

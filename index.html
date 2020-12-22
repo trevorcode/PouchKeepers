@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pouch Keepers</title>
+
+	<link href="dist/tailwind.min.css" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body>
+	<nav class="bg-primary-600">
+		<div class="max-w-6xl mx-auto px-2 sm:px-6 lg:px-8">
+			<div class="relative flex items-center justify-between h-16">
+				<div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+					<!-- Mobile menu button-->
+					<button onclick="toggleMenu()"
+						class="inline-flex items-center justify-center p-2 rounded-md text-blue-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+						aria-expanded="false">
+						<span class="sr-only">Open main menu</span>
+						<!-- Icon when menu is closed. -->
+						<!--
+              Heroicon name: menu
+  
+              Menu open: "hidden", Menu closed: "block"
+            -->
+						<svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+							stroke="currentColor" aria-hidden="true">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+						</svg>
+						<!-- Icon when menu is open. -->
+						<!--
+              Heroicon name: x
+  
+              Menu open: "block", Menu closed: "hidden"
+            -->
+						<svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+							stroke="currentColor" aria-hidden="true">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+						</svg>
+					</button>
+				</div>
+				<div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+					<div class="flex-shrink-0 flex items-center">
+						<img class="block lg:hidden h-8 w-auto" src="images/logo.png" alt="Workflow">
+						<img class="hidden lg:block h-10 w-auto" src="images/logo.png" alt="Workflow">
+						<span class="text-blue-200 font-semibold lg:block h-8">Pouch Keepers</span>
+					</div>
+					<div class="hidden sm:block sm:ml-6">
+						<div class="flex space-x-3">
+							<a href="#about"
+								class="text-blue-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+							<a href="#testimonials"
+								class="text-blue-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Testimonials</a>
+							<a href="#contact"
+								class="text-blue-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+							<a href="#"
+								class="text-blue-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Store</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--
+      Mobile menu, toggle classes based on menu state.
+  
+      Menu open: "block", Menu closed: "hidden"
+    -->
+		<div id="menuBlock" class="hidden sm:hidden">
+			<div class="px-2 pt-2 pb-3 space-y-1">
+				<!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+				<a href="#about" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
+				<a href="#testimonials"
+					class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Testimonials</a>
+				<a href="#contact"
+					class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+				<a href="#"
+					class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Store</a>
+			</div>
+		</div>
+	</nav>
+
+
+	<section class="bg-blue-300 landing-section flex flex-col justify-center">
+		<div class="mx-auto w-7xl px-4">
+			<h1 class="text-blue-50 font-bold text-4xl md:text-7xl" style="text-shadow:3px 3px 6px #6e6e6e;">Pouch Keepers</h1>
+			<h2 class="text-gray-600 text-2xl md:text-4xl font-bold mt-2">The answer to having sterilization pouches at your
+				fingertips</h2>
+			<div class="mt-10">
+				<a class="bg-green-500 text-white px-4 py-2 rounded-lg cursor-pointer hover:bg-green-300">Learn More</a>
+			</div>
+		</div>
+
+	</section>
+	<div class="sm:hidden -mt-20">
+		<a class="landing-more" href="#disorganized"><span>More</span><span><i class="arrow down"></i></span><span><i
+					class="arrow down"></i></span></a>
+	</div>
+
+	<section class="py-16 text-center" id="disorganized">
+		<div>
+			<div class="flex flex-col max-w-5xl mx-auto px-8">
+				<p class="py-4 text-xl">Do you store your sterilization pouches in a cabinet or drawer like this? </p>
+				<img src="images/unorganizedpouches.jpg">
+				<p class="py-4 text-xl">You need Pouch Keepers!</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="about" class="bg-gray-50">
+		<div class="max-w-5xl px-8 mx-auto py-10">
+			<h2 class="text-4xl sm:text-6xl py-3 border-b-4 border-green-200 mb-4">About Us</h2>
+			<div class="mb-5">
+				<p class="my-2">In a medical or dental sterilization lab, it is important to avoid cross contamination.
+					When staff
+					take contaminated instruments out of an ultrasonic cleaner with gloved hands, they should never be
+					opening a drawer or cabinet with those gloves to access their sterilization pouches.
+				</p>
+				<p class="my-2">This is to
+					protect the employee that comes in and opens that drawer or cabinet with bare hands.
+				</p>
+				<p class="my-2">Pouch Keepers
+					solves this cross contamination issue!
+				</p>
+			</div>
+			<div class="flex gap-8 flex-col sm:flex-row">
+				<div>
+					<img src="images/bannerimage.JPG" class="object-cover h-80">
+				</div>
+				<div class="">
+					<ul class="list-disc ml-8">
+						<li class="py-1">Angled bottom raises the front pouches for easier removal</li>
+						<li class="py-1">Can hold 200+ pouches (or a box of 200)</li>
+						<li class="py-1">Spring Action Front "tongue" holds pouches in place</li>
+						<li class="py-1">Can be mounted vertically, or horizontally</li>
+						<li class="py-1">Side by side or individually</li>
+						<li class="py-1">No more cross contamination reaching into a drawer or cabinet with dirty gloves</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<section id="testimonials" class="px-8 py-8 bg-primary-800">
+		<div class="mx-auto max-w-3xl">
+			<h2 class="text-4xl sm:text-6xl py-3 border-b-4 border-green-200 mb-4 max-w-lg text-blue-50">Testimonials</h2>
+			<div>
+
+				<div class="shadow-md flex items-center my-4 bg-blue-50">
+					<div class="bg-primary-600 rounded-full w-8 h-8 m-4 flex-shrink-0"></div>
+					<blockquote class="text-lg italic p-3">These keep pouches out of the way of liquids and saves counter space.</blockquote>
+				</div>
+
+				<div class="shadow-md flex items-center my-4 bg-blue-50">
+					<div class="bg-primary-600 rounded-full w-8 h-8 m-4 flex-shrink-0"></div>
+					<blockquote class="text-lg italic p-3">Easy to grab, cuts out cross contamination and holds an entire box of pouches.</blockquote>
+				</div>
+				<div class="shadow-md flex items-center my-4 bg-blue-50">
+					<div class="bg-primary-600 rounded-full w-8 h-8 m-4 flex-shrink-0"></div>
+					<blockquote class="text-lg italic p-3">Looks clean and professional. Holds pouches at an angle making it easy to get one at a time.</blockquote>
+				</div>
+				<div class="shadow-md flex items-center my-4 bg-blue-50">
+					<div class="bg-primary-600 rounded-full w-8 h-8 m-4 flex-shrink-0"></div>
+					<blockquote class="text-lg italic p-3">Neat and clean for a newly constructed office.</blockquote>
+				</div>
+				<div class="shadow-md flex items-center my-4 bg-blue-50">
+					<div class="bg-primary-600 rounded-full w-8 h-8 m-4 flex-shrink-0"></div>
+					<blockquote class="text-lg italic p-3">Found to be very convenient and easy to install.</blockquote>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="py-8 mx-auto container px-6 mb-6">
+		<div class="text-center">
+			<p class="py3 text-4xl mb-8">Visit our store</p>
+			<button type="submit" class="bg-green-500 text-white px-10 py-4 text-2xl rounded-lg cursor-pointer hover:bg-green-300 ">Store</button>
+		</div>
+	</section>
+
+	<section id="contact" class="mb-6">
+		<div class="py-8 max-w-4xl mx-auto container px-6">
+			
+			<form class="max-w-xl mx-auto">
+				<h2 class="text-4xl sm:text-6xl py-3 border-b-4 border-primary-500 max-w-lg text-gray-500 mb-8">Contact Us</h2>
+				<div class="mb-4">
+					<label class="text-gray-500 font-semibold text-md" for="name">Name</label>
+					<input type="text" name="name" placeholder="name" class="w-full border rounded-md border-gray-300 p-1">
+				</div>
+				<div class="mb-4">
+					<label class="text-gray-500 font-semibold" for="email">Email</label>
+					<input type="email" name="email" placeholder="email@gmail.com" class="w-full border rounded-md border-gray-300 p-1">
+				</div>
+				<div class="mb-4">
+					<label class="text-gray-500 font-semibold" for="interestedProducts">Products interested in</label>
+					<textarea name="interestedProducts" placeholder="" class="w-full border rounded-md border-gray-300 p-1 h-28"></textarea>
+				</div>
+				<div class="mb-4">
+					<label class="text-gray-500 font-semibold" for="comment">Questions or Comments</label>
+					<textarea name="comment" placeholder="comment" class="w-full border rounded-md border-gray-300 p-1 h-28"></textarea>
+				</div>
+				<button type="submit" class="bg-primary-500 text-white px-7 py-3 text-lg rounded-lg cursor-pointer hover:bg-primary-300">Submit</button>
+			</form>
+		</div>
+	</section>
+
+
+
+	<footer class="bg-primary-600 py-8">
+		<div class="mx-auto max-w-5xl px-4 md:grid-cols-2 md:grid md:gap-6">
+			<section class="mb-4">
+				<h3 class="text-gray-50 font-bold text-2xl">About Pouch Keepers</h3>
+				<p class="text-blue-50">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, quisquam pariatur. Quo
+					consequatur id atque dolore amet esse iure, molestiae fugit fugiat sit laborum saepe expedita
+					voluptate nesciunt iusto culpa.</p>
+			</section>
+			<section class="flex flex-col">
+				<h3 class="text-gray-50 font-bold text-2xl">Navigation</h3>
+				<a href="#about" class="text-primary-800">About</a>
+				<a href="#testimonials" class="text-primary-800">Testimonials</a>
+				<a href="#contact" class="text-primary-800">Contact</a>
+				<a href="#" class="text-primary-800">Store</a>
+			</section>
+		</div>
+	</footer>
+	<script>
+		function toggleMenu() {
+			let menuBlockShowing = document.querySelector("#menuBlock").classList.contains("hidden");
+
+			if (menuBlockShowing) {
+				document.querySelector("#menuBlock").classList.remove("hidden");
+				document.querySelector("#menuBlock").classList.add("block");
+			}
+			else {
+				document.querySelector("#menuBlock").classList.remove("block");
+				document.querySelector("#menuBlock").classList.add("hidden");
+			}
+
+		}
+
+	</script>
+</body>
+
+</html>
