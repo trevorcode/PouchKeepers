@@ -88,7 +88,7 @@
 	</nav>
 
 
-	<section class="bg-blue-300 landing-section flex flex-col justify-center">
+	<section class="bg-blue-300 landing-section flex flex-col justify-center relative overflow-hidden">
 		<div class="mx-auto w-7xl px-4">
 			<h1 class="text-blue-50 font-bold text-4xl md:text-7xl" style="text-shadow:3px 3px 6px #6e6e6e;">Pouch
 				Keepers</h1>
@@ -96,11 +96,28 @@
 				your
 				fingertips</h2>
 			<div class="mt-10">
-				<a class="bg-primary-400 text-white text-xl px-6 py-3 rounded-lg cursor-pointer hover:bg-primary-200">View
+				<a class="bg-primary-400 text-white text-xl px-6 py-3 rounded-lg cursor-pointer hover:bg-primary-200 z-10">View
 					our Store</a>
 			</div>
 		</div>
-
+	
+		  
+		  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none" class="absolute w-full bottom-0" style="height:16vw">
+			<path fill="white" fill-opacity="0.6" d="M0,192L30,197.3C60,203,120,213,180,218.7C240,224,300,224,360,208C420,192,480,160,540,170.7C600,181,660,235,720,256C780,277,840,267,900,250.7C960,235,1020,213,1080,197.3C1140,181,1200,171,1260,186.7C1320,203,1380,245,1410,266.7L1440,288L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
+		  </svg>
+		  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none" class="absolute w-full -bottom-1" style="height:8vw">
+			<path fill="white" fill-opacity="1" d="M0,192L30,197.3C60,203,120,213,180,218.7C240,224,300,224,360,208C420,192,480,160,540,170.7C600,181,660,235,720,256C780,277,840,267,900,250.7C960,235,1020,213,1080,197.3C1140,181,1200,171,1260,186.7C1320,203,1380,245,1410,266.7L1440,288L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
+		  </svg>
+		<!-- <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="absolute w-screen h-28 bottom-0">
+			<polygon points="0,100 100,0 100,100" style="fill:white; opacity:0.3" />
+		  </svg>
+		<svg viewBox="0 0 100 100" preserveAspectRatio="none" class="absolute w-screen h-28 -bottom-0">
+			<polygon points="0,50 0,100 100,100" style="fill:white; " />
+		  </svg>
+		  <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="absolute w-screen h-40 -bottom-0">
+			<polygon points="0,0 0,100 100,100" style="fill:white; opacity:0.3" />
+		  </svg> -->
+		  
 	</section>
 	<div class="sm:hidden -mt-20">
 		<a class="landing-more" href="#about"><span>More</span><span><i class="arrow down"></i></span><span><i
@@ -143,6 +160,9 @@
 
 			</div>
 		</div>
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none" class="w-full -bottom-1" style="height:14vw">
+			<path fill="rgb(249, 250, 251)" fill-opacity="1" d="M0,96L30,101.3C60,107,120,117,180,117.3C240,117,300,107,360,101.3C420,96,480,96,540,101.3C600,107,660,117,720,117.3C780,117,840,107,900,117.3C960,128,1020,160,1080,149.3C1140,139,1200,85,1260,74.7C1320,64,1380,96,1410,112L1440,128L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
+		  </svg>
 	</section>
 
 	<section class="py-16 bg-gray-50" id="disorganized">
@@ -160,7 +180,7 @@
 					</div>
 				</div>
 				<div class="w-80 shadow-xl text-center rounded-3xl overflow-hidden border-gray-200 border">
-					<div><img src="images/mediumpouchdispenser.jpg" class="object-fill h-80 w-full"></div>
+					<div><img src="images/mediumpouchdispenser.jpg" class="object-contain h-80 w-full"></div>
 					<h3 class="text-2xl mb-4 text-gray-600">Medium Dispenser</h3>
 					<div>
 						<p class="text-gray-400">Holds Sterilization Pouches up to</p>
@@ -198,8 +218,8 @@
 		</div>
 	</section>
 
-	<section class="pt-8 pb-16 bg-gray-50" id="disorganized">
-		<div class="max-w-5xl mx-auto text-">
+	<section class="pt-8 bg-gray-50 relative" id="disorganized">
+		<div class="max-w-5xl mx-auto">
 			<div class="flex flex-col items-center px-4">
 			<h2 class="text-4xl sm:text-6xl py-3 border-b-4 border-green-200 text-gray-500 text-center mb-8">Digital Sensor
 				Sleeve Dispenser
@@ -218,10 +238,13 @@
 				</div>
 			</div>
 		</div>
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none" class="w-full -bottom-1 mt-4" style="height:14vw">
+			<path fill="rgb(4, 46, 73)" fill-opacity="1" d="M0,0L60,42.7C120,85,240,171,360,181.3C480,192,600,128,720,117.3C840,107,960,149,1080,160C1200,171,1320,149,1380,138.7L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+		  </svg>
 	</section>
 
-	<section id="testimonials" class="px-8 py-8 bg-primary-800">
-		<div class="mx-auto max-w-3xl">
+	<section id="testimonials" class="bg-primary-800 relative">
+		<div class="mx-auto max-w-3xl px-8 py-8">
 			<h2 class="text-4xl sm:text-6xl py-3 border-b-4 border-green-200 mb-4 max-w-lg text-blue-50">Testimonials
 			</h2>
 			<div>
@@ -252,6 +275,9 @@
 				</div>
 			</div>
 		</div>
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none" class="w-full bottom-0 mt-4" style="height:14vw">
+			<path fill="white" fill-opacity="1" d="M0,96L60,96C120,96,240,96,360,90.7C480,85,600,75,720,64C840,53,960,43,1080,37.3C1200,32,1320,32,1380,32L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+		  </svg>
 	</section>
 
 	<section class="py-8 mx-auto container px-6 mb-6">
@@ -293,8 +319,6 @@
 			</form>
 		</div>
 	</section>
-
-
 
 	<footer class="bg-primary-600 py-8">
 		<div class="mx-auto max-w-5xl px-4 md:grid-cols-2 md:grid md:gap-6">
