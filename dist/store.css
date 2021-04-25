@@ -1,0 +1,7 @@
+﻿.products-container
+{
+    padding:1rem;
+    max-width:64rem;
+    margin:0 auto;
+    min-height:60vh;
+}
