@@ -157,7 +157,22 @@
       </section>
     </div>
   </footer>
+  <script>
+    function toggleMenu() {
+        let menuBlockShowing = document.querySelector("#menuBlock").classList.contains("hidden");
 
+        if (menuBlockShowing) {
+            document.querySelector("#menuBlock").classList.remove("hidden");
+            document.querySelector("#menuBlock").classList.add("block");
+        }
+        else {
+            document.querySelector("#menuBlock").classList.remove("block");
+            document.querySelector("#menuBlock").classList.add("hidden");
+        }
+
+    }
+
+</script>
 </body>
 
 </html>

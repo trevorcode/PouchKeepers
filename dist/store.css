@@ -14,6 +14,8 @@
     align-items: center;
 }
 
+
+
 .mounting-example-card {
     background-color:white;
     border-radius:1rem;
@@ -39,4 +41,19 @@
 
 .examples-container {
     background-color: hsl(0, 0%, 90%);
+}
+
+@media (max-width:600px) {
+    .mounting-example-card {
+        width:100%;
+        margin:1rem 0;
+    }
+    
+    .mounting-example-card img {
+        width: 100%
+    }
+    .mounting-example-card.small {
+        width: 100%
+    }
+    
 }
