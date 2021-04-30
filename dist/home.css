@@ -18,7 +18,7 @@
 @media (min-width: 720px)
 {
     .aboutSection {
-        font-size:1.5rem;
+        font-size:1.25rem;
         line-height:150%;
     }
 
@@ -26,4 +26,21 @@
         margin:1rem 0;
     }
 
+}
+
+
+.aboutSection ul { list-style: none; } /* Remove default bullets */
+
+li::before {
+    content: "\2713"; /* Unicode bullet symbol */
+    color: rgb(152, 221, 189);  /* Bullet color */
+	
+	/* Optional tweaks */
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+
+.testimonialsContentContainer > div {
+ background-color:white;
 }
