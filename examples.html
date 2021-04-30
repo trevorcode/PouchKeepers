@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pouch Keepers</title>
+
+  <link href="dist/tailwind.min.css" rel="stylesheet" type="text/css">
+  <link href="dist/store.css" rel="stylesheet" type="text/css" />
+  <meta name=description
+    content="Pouch Keepers is a small manufacturing and sales company established in 2012. Our innovative and convenient dispensers have help dentists, doctors, hospitals and veterinarians provide a higher standard of sterilization and safety in their facilities.">
+
+</head>
+
+<body>
+  <nav class="bg-primary-600">
+    <div class="max-w-6xl mx-auto px-2 sm:px-6 lg:px-8">
+      <div class="relative flex items-center justify-between h-16">
+        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <!-- Mobile menu button-->
+          <button onclick="toggleMenu()"
+            class="inline-flex items-center justify-center p-2 rounded-md text-blue-200 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+            aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <!-- Icon when menu is closed. -->
+            <!--
+                          Heroicon name: menu
+
+                          Menu open: "hidden", Menu closed: "block"
+                        -->
+            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <!-- Icon when menu is open. -->
+            <!--
+                          Heroicon name: x
+
+                          Menu open: "block", Menu closed: "hidden"
+                        -->
+            <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+          <div class="flex-shrink-0 flex items-center">
+            <img class="block lg:hidden h-8 w-auto" src="images/logoinverted.png" alt="Workflow">
+            <img class="hidden lg:block h-10 w-auto" src="images/logoinverted.png" alt="Workflow">
+            <span class="text-blue-200 font-semibold lg:block h-8">Pouch Keepers</span>
+          </div>
+          <div class="hidden sm:block sm:ml-6">
+            <div class="flex space-x-3">
+              <a href="/#about"
+                class="text-blue-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+              <a href="/#testimonials"
+                class="text-blue-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Testimonials</a>
+              <a href="examples"
+                class="text-blue-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Mounting
+                Examples</a>
+              <a href="store"
+                class="text-blue-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Store</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--
+          Mobile menu, toggle classes based on menu state.
+
+          Menu open: "block", Menu closed: "hidden"
+        -->
+    <div id="menuBlock" class="hidden sm:hidden">
+      <div class="px-2 pt-2 pb-3 space-y-1">
+        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+        <a href="#about" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
+        <a href="#testimonials"
+          class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Testimonials</a>
+        <a href="examples"
+          class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Mounting Examples</a>
+        <a href="/store"
+          class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Store</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="examples-container">
+    <div class="products-container">
+      <h1 class="text-4xl sm:text-6xl py-3 border-b-4 border-green-200 mb-4 text-gray-500">Mounting Examples</h1>
+      <p>Here are some of the options for mounting your Pouch Keepers!</p>
+      <div class="mounting-examples-container">
+
+        <div class="mounting-example-card">
+          <img src="images/mountingexamples/1.jpg" alt="Horizontal mount on cabinet doors" />
+          <p>Horizontal mount on cabinet doors</p>
+        </div>
+
+        <div class="mounting-example-card small">
+          <img src="images/mountingexamples/2.jpg" alt="Digital sensor sheath dispenser in operatory" />
+          <p>Digital sensor sheath dispenser in operatory</p>
+        </div>
+
+        <div class="mounting-example-card">
+          <img src="images/mountingexamples/3.jpg" alt="Vertical mount on cabinetry - they won't fall out due to the spring-like tongue!" />
+          <p>Vertical mount on cabinetry - they won't fall out due to the spring-like "tongue"!</p>
+        </div>
+
+        <div class="mounting-example-card small">
+          <img src="images/mountingexamples/4.jpg" alt="Vertical wall mount" />
+          <p>Vertical wall mount</p>
+        </div>
+
+        <div class="mounting-example-card">
+          <img src="images/mountingexamples/5.jpg" alt="All sizes mounted horizontally on wall" />
+          <p>All sizes mounted horizontally on wall</p>
+        </div>
+
+        <div class="mounting-example-card">
+          <img src="images/mountingexamples/6.jpg" alt="Under cabinet mount" />
+          <p>Under cabinet mount</p>
+        </div>
+
+        <div class="mounting-example-card small">
+          <img src="images/mountingexamples/7.jpg" alt="Digital sensor cover dispenser mounted next to sensor" />
+          <p>Digital sensor cover dispenser mounted next to sensor</p>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="bg-primary-600 py-8">
+    <div class="mx-auto max-w-5xl px-4 md:grid-cols-3 md:grid md:gap-8">
+      <section class="mb-4">
+        <h3 class="text-primary-200 font-bold text-2xl mb-2">About Pouch Keepers</h3>
+        <p class="text-blue-50">Pouch Keepers is a small manufacturing and sales company established in 2012. Our
+          innovative and convenient dispensers have help dentists, doctors, hospitals and veterinarians provide a higher
+          standard of sterilization and safety in their facilities. Over 20,000 sold.</p>
+      </section>
+      <section class="flex flex-col">
+        <h3 class="text-primary-200 font-bold text-2xl mb-2">Navigation</h3>
+        <a href="/#about" class="text-primary-100">About</a>
+        <a href="/#testimonials" class="text-primary-100">Testimonials</a>
+        <a href="examples" class="text-primary-100">Mounting Examples</a>
+        <a href="/store" class="text-primary-100">Store</a>
+      </section>
+      <section class="flex flex-col">
+        <h3 class="text-primary-200 font-bold text-2xl mb-2">Social</h3>
+        <a target="_blank" href="http://pinterest.com/pouchkeepers/" class="text-primary-100">Pinterest</a>
+        <a target="_blank" href="http://www.facebook.com/pages/Pouch-Keepers/176064755809839"
+          class="text-primary-100">Facebook</a>
+      </section>
+    </div>
+  </footer>
+
+</body>
+
+</html>

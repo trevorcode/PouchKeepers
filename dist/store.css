@@ -5,3 +5,38 @@
     margin:0 auto;
     min-height:60vh;
 }
+
+
+.mounting-examples-container {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.mounting-example-card {
+    background-color:white;
+    border-radius:1rem;
+    overflow:hidden;
+    width:100%;
+    margin:1rem;
+    box-shadow: hsl(0, 0%, 50%) 4px 4px 12px;
+    max-height: min(400px,100%);
+}
+
+.mounting-example-card img {
+    object-fit: cover;
+    width: max(400px, 100%);
+}
+.mounting-example-card.small {
+    width: max(400px, 50%);
+}
+
+.mounting-example-card p {
+    text-align: center;
+    padding:1rem;
+}
+
+.examples-container {
+    background-color: hsl(0, 0%, 90%);
+}
